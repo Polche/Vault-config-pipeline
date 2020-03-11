@@ -12,7 +12,6 @@ pipeline {
     //     }
     // }
       stages {
-
         stage('install_deps') {
           steps {
             sh "apt install wget zip python-pip -y"
@@ -42,7 +41,6 @@ pipeline {
             sh 'terraform plan -no-color -out=.tfplan'
           }
         }
-
         // Wait for approval
         //     stage('approval') {
         //     //   options {

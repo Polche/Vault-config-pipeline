@@ -5,7 +5,7 @@ pipeline {
     node {
       label 'master'
     }
-    // // }
+  }
     // agent {
     //     docker {
     //      image 'hashicorp/terraform:light'
@@ -58,5 +58,4 @@ pipeline {
         //     }
         //   }
       }
-
     }
